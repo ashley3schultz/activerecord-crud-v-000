@@ -35,12 +35,13 @@ def can_get_the_first_item_in_the_database
 end
 
 def can_get_the_last_item_in_the_database
-  movie = Movie.last 
+  movie = Movie.last
   movie.title
 end
 
 def can_get_size_of_the_database
-  __
+  movie = Movie.all
+  movie.size
 end
 
 def can_find_the_first_item_from_the_database_using_id
