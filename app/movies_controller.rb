@@ -25,7 +25,7 @@ end
 
 def can_be_created_in_a_block(args = nil)
   Movie.create do |m|
-    m.title = args[:title] if args != nil
+    m.create(args)
   end
 end
 
