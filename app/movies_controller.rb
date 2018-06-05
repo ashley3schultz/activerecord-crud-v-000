@@ -60,11 +60,11 @@ def can_find_using_where_clause_and_be_sorted
 end
 
 def can_be_found_updated_and_saved
-    Movie.create(title: "Awesome Flick")
+    Movie.create(title: 'Awesome Flick')
     movie = Movie.find_by(title: 'Awesome _Flick')
     binding.pry
     movie.title = 'Even Awesomer Flick'
-    movie
+    movie.save
 end
 
 def can_update_using_update_method
