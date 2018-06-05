@@ -50,8 +50,9 @@ def can_find_the_first_item_from_the_database_using_id
 end
 
 def can_find_by_multiple_attributes
-  movie = Movie.where(title = 'Title' AND release_date = 2000 AND director = 'Me')
-  movie.title
+  binding.pry
+  #movie = Movie.where(title = 'Title' AND release_date = 2000 AND director = 'Me')
+  #movie.title
 end
 
 def can_find_using_where_clause_and_be_sorted
