@@ -20,7 +20,7 @@ def can_be_created_with_a_hash_of_attributes
       lead: "Paul Newman",
       in_theaters: false
   }
-  movie = Movie.create_with(attributes)
+  movie = Movie.create(attributes)
 end
 
 def can_be_created_in_a_block(args = nil)
@@ -73,7 +73,6 @@ def can_update_using_update_method
 end
 
 def can_update_multiple_items_at_once
-  # Change title of all movies to "A Movie"
   5.times do |i|
     Movie.create(title: "Movie_#{i}", release_date: 2000+i)
   end
