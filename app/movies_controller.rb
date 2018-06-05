@@ -27,6 +27,7 @@ def can_be_created_in_a_block(args = 'title')
   Movie.create do |m|
     m.title = args
     m.title
+    binding.pry
   end
 end
 
